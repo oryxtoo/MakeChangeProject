@@ -83,8 +83,8 @@ public class MakeChange {
 		}		//callMethod1();
 		
 		//message to user if too little or correct amount
-		else if (price >= customer$) {		System.out.println("Amount required: " + price +/*Price -(subtract)
-				customerAmt = returnCash */ "Amount given: " + customer$ );
+		else if (price >= customer$) {
+			System.out.println("Amount required: " + price + "Amount given: " + customer$ );
 		//returns user to initial prompt for price of item, amount, and money given?
 				//callMethod2();
 		
