@@ -21,7 +21,7 @@ public class MakeChange {
 			while (paid < price) {
 				System.out.print("Please provide " + ((price - paid) / 100.00) + " to complete purchase.");
 				paid = paid + (int)(sc.nextDouble() * 100);
-			}
+				}
 			if (paid > price) {
 				System.out.println("The change is: " + ((paid - price) / 100.00));
 				System.out.println("The customer should be given the change as follows:");
@@ -32,13 +32,13 @@ public class MakeChange {
 					change = change % 2000;
 					System.out.println(twenties + " $20 bill(s)");
 				}
-
+				
 				int tens = change / 1000;
 				if (tens > 0) {
 					change = change % 1000;
 					System.out.println(tens + " $10 bill(s)");
 				}
-
+				
 				int fives = change / 500;
 				if (fives > 0) {
 					change = change % 500;
@@ -77,13 +77,11 @@ public class MakeChange {
 			if (paid == price) {
 				System.out.print("No change necessary.");
 			}
-			
 			System.out.println("Do you wish to continue? Enter 'continue' or 'quit': ");
 			continues = sc.next();
 				if (continues.equalsIgnoreCase("quit")) {
 					System.out.println("Thank you. Have a nice day.");
-				}
-			 
+				} 
 		}sc.close();
 	}
 }
