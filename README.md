@@ -1,6 +1,8 @@
 ## MakeChange
 
 ### Intro
+This is my first project for Skill Distillery Java Bootcamp.
+
 This project simulates a cash register. A user is asked for an item amount.
 
 The user enters the amount.
